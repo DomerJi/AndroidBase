@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidBase</string>
+
+
+    <item name="holder" type="id"></item>
+    <item name="adpter" type="id"></item> 
+
+</resources>

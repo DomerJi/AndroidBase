@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <com.jsp.base.view.WebViewTitleView
+        android:id="@+id/webview_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.jsp.base.view.WebViewTitleView>
+
+    <RelativeLayout
+        android:layout_below="@id/webview_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+
+        <ProgressBar
+            android:id="@+id/webview_bar"
+            style="@style/WebViewBar"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:max="150" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/webView_error"
+        android:layout_below="@id/webview_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include
+            layout="@layout/net_error"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.jsp.base"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.jcodecraeer:xrecyclerview:+'
+    //GSON解析json
+    compile 'com.github.bumptech.glide:glide:3.5.2'
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    compile 'cn.kejin.ximageview:XImageView:+'
+    //B站播放器
+    compile 'com.dou361.ijkplayer:jjdxm-ijkplayer:+'
+    //B站弹幕
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.6.1'
+    compile 'com.github.ctiao:ndkbitmap-armv7a:0.6.1'
+}

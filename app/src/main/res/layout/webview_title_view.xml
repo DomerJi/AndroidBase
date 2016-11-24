@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/webview_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="1dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="0dip">
+
+        <ImageView
+            android:id="@+id/webview_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:background="@drawable/back_btn_selecter"
+            android:contentDescription="@null" />
+
+      
+        <TextView
+            android:id="@+id/back_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/webview_back_img"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="#222222"
+            android:text="返回"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/webview_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_height"
+        android:layout_toRightOf="@id/webview_back"
+        android:layout_marginBottom="1dip"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="12dip"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clear_selector"
+            android:id="@+id/webview_clear_img"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/webview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center">
+
+
+        <com.jsp.base.view.CircleImageView
+            android:id="@+id/webview_title_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/webview_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/webview_title_img"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:layout_centerInParent="true"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:visibility="visible"
+            android:text="标题"/>
+
+
+
+    </RelativeLayout>
+    
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/webview_share_selector"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:id="@+id/webview_share"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/webview_refresh_selector"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/webview_share"
+        android:layout_marginRight="12dp"
+        android:id="@+id/webview_refresh" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

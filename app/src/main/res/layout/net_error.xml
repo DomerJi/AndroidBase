@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f5f7"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_webview_no_network"
+        android:layout_marginTop="138dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_webview_no_network"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请检查您的网络后刷新重试"
+        android:textSize="15sp"
+        android:textColor="#c1c2c4"
+        android:layout_below="@id/iv_webview_no_network"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+</RelativeLayout>
